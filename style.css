@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.l {
+    position: absolute;
+    width: calc(100% - 9px);
+    height: calc(100% - 9px);
+    border-radius: 50%;
+    border-top: 5px solid rgb(22, 224, 214);
+    animation: spin 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+    20% {
+        width: calc(100% -19px);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
